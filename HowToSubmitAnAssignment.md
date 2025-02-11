@@ -1,7 +1,7 @@
 ## Why not to submit a notebook?
-All assignments are a piece of work, that explains a story (almost). Therefore it needs to be clear, descriptive and preferably interactive as well for the viewer.
+All assignments are a piece of work, that explains a story (almost). Therefore it needs to be clear, descriptive and preferably interactive as well for the viewer. The notebook format is excellent for interactivity and packaging all sorts of code, comments, figures and other informations, but it depends on a server. In order to make it publicly and widely accessible one needs to convert it into html, or pdf etc format.
 
-There are multiple ways to create an output in which the results/figures can be emphasized and not the code itself, that generated it as it is in a notebook.
+Jupyter and R notebooks, and R markdowns can be converted into these formats
 
 ## 1. Convert it to an HTML file
 jupyter offers an easy way to convert a notebook into a (semi)static HTML file:
@@ -21,7 +21,6 @@ Same as before but one can set the `--to` parameter to *pdf*, *latex*, *slides* 
 
 ## 3. Create an output with visualization modules
 There are several modules that is intended for nicely formatted output and offers a structured layout
-
 
 * [Bokeh](https://docs.bokeh.org/en/latest/)
 * [Holoviews](https://holoviews.org/) a higher level wrapper for many modules
