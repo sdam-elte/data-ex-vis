@@ -25,15 +25,15 @@ Each occasion starts with approximately a twenty minute of introduction into the
 1,  11.02.2025. **[Introduction to K8plex Edu](https://k8plex-edu.elte.hu/hub)**, **[Jupyter Notebooks](https://jupyter.org/)**, **Requirements for the course**,
                 **[Timeseries analysis](Lectures/Timeseries/02-Timeseries.pdf)** and **[USGS water discharge statistics](Assignments/Timeseries)**<br>
 2,  18.02.2025. **[Maps, shapes, coordinates](Lectures/Shapes-Maps-Coordinates)** <br>
-3,  25.02.2025. **[Review the basics, Python, Pandas, etc.](Basics_Python_pandas)** <br>
-4,  04.03.2025. **[Image exploration](Lectures/Image_Exploration)**  <br>
-5,  11.03.2025. **[Network exploration](Lectures/Networks)** <br>
-6,  18.03.2025. **[SQL queries](Lectures/SQL)** <br>
-7,  25.03.2025. **[Natural Language Processing](Lectures/NLP)** <br>
-8,  01.04.2025. **[Datacleaning, and Filtering, Reproducibility](Lectures/Datacleaning-reproducibility)** <br>
-9,  08.04.2025. **[Interactive Visualization](Lectures/Interactive_Visualization)** <br>
-10, 15.04.2025. **[REST services](Lectures/HTTP-REST-API)** <br>
-11, 29.04.2025. **[Working with large datasets](Lectures/LargeData)**<br>
+3,  25.02.2025. **[Image exploration](Lectures/Image_Exploration)**  <br>
+4,  04.03.2025. **[Network exploration](Lectures/Networks)** <br>
+5,  11.03.2025. **[SQL queries](Lectures/SQL)** <br>
+6,  18.03.2025. **[Natural Language Processing](Lectures/NLP)** <br>
+7,  25.03.2025. **[Datacleaning, and Filtering, Reproducibility](Lectures/Datacleaning-reproducibility)** <br>
+8,  01.04.2025. **[Interactive Visualization](Lectures/Interactive_Visualization)** <br>
+9,  08.04.2025. **[REST services](Lectures/HTTP-REST-API)** <br>
+10, 15.04.2025. **[Working with large datasets](Lectures/LargeData)**<br>
+11, 29.04.2025. **[Chatbots and LLMs, Text to SQL](Lectures/Texttosql)**<br>
 12, 06.05.2025. **Away for conference, no lecture** <br>
 13, 13.05.2025. **Consultation only** <br>
 

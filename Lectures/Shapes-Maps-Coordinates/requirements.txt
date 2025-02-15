@@ -1,0 +1,9 @@
+pandas
+geopandas
+shapely
+folium
+numpy
+ipykernel
+matplotlib
+ipywidgets
+seaborn
