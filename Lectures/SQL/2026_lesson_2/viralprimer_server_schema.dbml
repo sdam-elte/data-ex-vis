@@ -1,0 +1,144 @@
+Table viralprimer_server_browse_gene {
+  id bigint
+  bio_types varchar(100)
+  gene_name varchar(100)
+  protein_id_coveo varchar(100)
+  protein_name_gisaid varchar(100)
+  other_info varchar(100)
+  strand varchar(100)
+  start integer
+  end integer
+  nucleotide_seq text
+  protein_seq text
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_browse_mutation {
+  id bigint
+  gene_name_id bigint
+  residue_positions integer
+  ref_residue_seq varchar(100)
+  nucleotide_positions integer
+  ref_nucleotide_seq varchar(100)
+  alt_nucleotide_seq varchar(100)
+  mutation_residue varchar(100)
+  mutation_codon_1 varchar(100)
+  mutation_codon_2 varchar(100)
+  mutation_codon_3 varchar(100)
+  pos integer
+  codon_number integer
+  nucletotide_mutation varchar(100)
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_browse_primers {
+  id bigint
+  database varchar(100)
+  dam_tr_freq float
+  dam_tr_no integer
+  SCM_freq float
+  SCM_no integer
+  SUS_freq float
+  SUS_no integer
+  primer_id bigint
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_country {
+  id bigint [pk]
+  country varchar(100)
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_dailysamples {
+  id bigint [pk]
+  date date
+  country varchar(100)
+  database varchar(100)
+  variant varchar(100)
+  daily_incoming_samples integer
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_database {
+  id bigint
+  name varchar(100)
+  refseq_id varchar(1000)
+}
+
+Table viralprimer_server_date {
+  id bigint [pk]
+  date date
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_gene {
+  id bigint
+  gene_name varchar(100)
+  start integer
+  end integer
+  nucleotide_seq text
+  protein_seq text
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_mutation {
+  id bigint [pk]
+  nucleotide_mutation varchar(1000)
+  position integer
+  mutation varchar(1000)
+  number_of_samples integer
+  variant varchar(100)
+  database varchar(100)
+  date date
+  country varchar(100)
+  reference_genome_id varchar(1000)
+  filter_001 boolean
+  filter_01 boolean
+  filter_1 boolean
+}
+
+Table viralprimer_server_primer {
+  id bigint
+  method varchar(100)
+  country varchar(100)
+  origin varchar(100)
+  primer_set varchar(100)
+  primer_name varchar(100)
+  type varchar(100)
+  target_gene varchar(100)
+  original_primer_name varchar(100)
+  start integer
+  end integer
+  target_sequence text
+  primer_size_bp integer
+  upload_time timestamp
+  reference varchar(1000)
+  reference_genome_id varchar(1000)
+}
+
+Table viralprimer_server_refseq {
+  reference_genome varchar(1000)
+  sequence text
+  header varchar(100)
+  name varchar(100)
+}
+
+Table viralprimer_server_variant {
+  id bigint [pk]
+  variant varchar(100)
+  reference_genome_id varchar(1000)
+}
+
+Ref: viralprimer_server_browse_mutation.gene_name_id > viralprimer_server_gene.id
+Ref: viralprimer_server_browse_primers.primer_id > viralprimer_server_primer.id
+Ref: viralprimer_server_gene.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_mutation.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_primer.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_variant.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_country.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_date.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_dailysamples.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_browse_gene.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_browse_mutation.reference_genome_id > viralprimer_server_refseq.reference_genome
+Ref: viralprimer_server_browse_primers.reference_genome_id > viralprimer_server_refseq.reference_genome
