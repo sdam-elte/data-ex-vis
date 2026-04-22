@@ -78,7 +78,7 @@ Hands-on tutorial on a scientific database CoVeo or Sewage (working in groups of
 7. **[Data extraction from images](Assignments/Image_Exploration)** - HTML - József Stéger
 8. **[Natural Language Processing on tweets](Assignments/NLP)** - HTML - Eszter Bokányi
 
-You have to submit **8 assignments** (choose one from each topic)
+You can submit up to **8 assignments** (choose one from each topic), but you don't have to submit all of them in order to get a grade.
 All assigments should be converted into HTML unless stated otherwise!
 
 The submitted results should look like a **report** communicating results for a layman, which can be generated from the notebooks. This will be explained on the [lecture](HowToSubmitAnAssignment.md). All figures should have *labels*, *title*, each exercise should end with a descriptive *conclusion* and explanatory comments should be inserted into the code. These are **must have features** of a work that is intended for presentation.
